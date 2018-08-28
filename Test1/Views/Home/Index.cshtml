@@ -1,0 +1,21 @@
+﻿@using HtmlAgilityPack;
+@using Test1.Models;
+@model Test1.Models.SearchModel
+@{
+    ViewBag.Title = "HOME";
+    var newsModel = (NewsModel)ViewBag.newsModel;
+    var test = (string)ViewBag.test ?? " ";
+
+}
+
+<h2>Gideon Pogi</h2>
+
+@newsModel.CompanyName
+
+<br />
+@test
+
+
+
+
+

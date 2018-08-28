@@ -1,0 +1,61 @@
+﻿@model Test1.Models.RegisterModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h3>@ViewBag.test</h3>
+<h3>@ViewBag.category</h3>
+<h3>@ViewBag.pathName</h3>
+
+@using (Html.BeginForm("Verify", "Register",FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <div class="col-md-12">
+                <input type="text" name="companyName" class="form-control" />
+                @Html.ValidationMessageFor(model => model.companyName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2">
+                <input id="first" type="radio" name="category" value="0" class="form-check-input documentUpld" />
+                <label for="first">PRIVATE</label>
+            </div>
+
+            <div class="col-md-2">
+                <input id="second" type="radio" name="category" value="1" class="form-check-input documentUpld" />
+                <label for="second">OTHERS</label>
+            </div>
+        </div>
+
+        <div class="form-group private">
+         
+            <label for="private1">PRIVATE 1</label>
+            <input id="private1" type="file" name="documentsPriv" accept=".docx,.pdf" />
+            <label for="private2">PRIVATE 2</label>
+            <input id="private2" type="file" name="documentsPriv" accept=".docx,.pdf" />
+        </div>
+
+        <div class="form-group other">
+            <label for="other1">OTHER 1</label>
+            <input id="other1" type="file" name="documentsOther" accept=".docx,.pdf"/>
+            <label for="V">OTHER 2</label>
+            <input id="other2" type="file" name="documentsOther" accept=".docx,.pdf"/>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-1">
+                <input type="submit" value="Verify" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<script src="~/Scripts/register.js"></script>
