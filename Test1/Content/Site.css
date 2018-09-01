@@ -16,4 +16,37 @@ textarea {
     max-width: 280px;
 }
 
+.img-center {
+    margin: 0 auto;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.navbar-inverse {
+    background-color: #1961DC;
+    border-color: #080808;
+}
+
+.center {
+    margin: auto;
+}
+
+.moveright {
+    position: relative;
+    right: 40px;
+}
+
+.boxForm {
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background: white;
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden
+}
+
+
 

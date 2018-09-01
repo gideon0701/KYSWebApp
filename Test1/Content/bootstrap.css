@@ -203,6 +203,11 @@ input[type="search"] {
   -webkit-appearance: textfield;
 }
 
+.bg {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -4501,8 +4506,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #222222;
-  border-color: #080808;
+    background-color: #;
+    border-color: #080808;
 }
 
 .navbar-inverse .navbar-brand {

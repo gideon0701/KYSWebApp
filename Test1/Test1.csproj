@@ -100,6 +100,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\DOC VERification.png" />
+    <Content Include="images\DOC VERification_center.png" />
+    <Content Include="images\semantic_2.png" />
+    <Content Include="images\wallpaper_ky.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include=".gitignore" />
